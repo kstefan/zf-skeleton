@@ -1,0 +1,14 @@
+{{ doctype() }}
+<html>
+<head>
+    <meta charset="utf-8">
+    <base href="{{ serverUrl() }}/">
+    {% block headTitle %}
+        {% do headTitle().setSeparator(' | ') %}
+        {{ headTitle('__base_title') }}
+    {% endblock %}
+</head>
+<body>
+{{ block('content') }}
+</body>
+</html>
