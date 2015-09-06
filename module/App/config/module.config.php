@@ -6,6 +6,7 @@ return [
     ],
     'service_manager' => require __DIR__ . '/service.config.php',
     'view_helpers' => require __DIR__ . '/view-helper.config.php',
+    'form_elements' => require __DIR__ . '/form.config.php',
     'translator' => [
         'locale' => 'cs',
         'translation_file_patterns' => [
